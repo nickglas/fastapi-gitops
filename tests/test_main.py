@@ -42,6 +42,7 @@ def test_get_item():
     assert data["name"] == "Item 5"
     assert "item number 5" in data["description"]
 
+
 def test_create_item():
     response = client.post(
         "/api/items",
